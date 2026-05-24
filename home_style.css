@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Header -------------------------------------------------------------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    
+    background:  linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url(imagens-home/rover-banner2.webp) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40.2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
+}
+
+/* Titulo */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    margin-left: 3%;
+    height: 30rem;
+}
+
+.title .titulo {
+    font-size: 6rem;
+    color: white;
+    margin-top: 3rem;
+}
+
+#slogan {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.637);
+}
+
+/* Login */
+
+.header-container-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    position: absolute;
+    left: 53%;
+
+    background-color: #301b19;
+    width: 60rem;
+    height: 30rem;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    border-radius: 1.2rem;
+}
+
+.login-title {
+    color: white;
+    font-size: 1.8rem;
+    margin-left: 5%;
+}
+
+span {
+    color: #a14e4e;
+    text-decoration: underline;
+}
+
+.complement {
+    color: rgba(255, 255, 255, 0.664);
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+.login-buttons-area {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    gap: 0.2rem;
+
+    width: 90%;
+}
+
+.login-buttons-area .botao {
+    font-size: 1.7rem;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    width: 40%;
+    height: 4.3rem;
+}
+
+.botao-hover {
+    transition-duration: 0.3s;
+}
+
+.botao-hover:hover {
+    background-color: rgb(148, 148, 148);
+    width: 42%;
+}
+
+.login-buttons-area .registro {
+    background-color: #7f4a44;
+    color: white;
+    width: 60%;
+    transition-duration: 0.3s;
+}
+
+.login-buttons-area .registro:hover {
+    background-color: #bd6d64;
+    color: rgb(255, 255, 255);
+    width: 70%;
+}
+
+
+/* Header end -------------------------------------------------------------------- */
+
+/* Pesquisa -------------------------------------------------------------------- */
+
+.icon {
+    width:3rem;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 7rem;
+}
+
+.logo {
+    width: 8%;
+}
+
+.carrinho {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: start;
+
+    width: 20%;
+    color: black;
+}
+
+.carrinho .icon {
+    margin-left: 2.5rem;
+}
+
+.carrinho button {
+    background-color: #bd6d64;
+    color: white;
+
+    font-size: 1.6rem;
+    height: 3.5rem;
+    width: 8rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.664);
+    transition-duration: 0.3s;
+}
+
+.carrinho button:hover {
+    background-color: #7f4a44;
+    color: rgb(255, 255, 255);
+    width: 9rem;
+}
+
+.container-pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 62%;
+}
+
+.barra-pesquisa {
+    width: 95%;
+    height: 3.5rem;
+    text-indent: 0.5rem;
+    font-size: 1.6rem;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.664);
+    border-radius: 0.5rem;
+}
+
+.barra-pesquisa:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.664), 0px 0px 10px rgba(0, 0, 0, 0.664);
+}
+
+.barra-pesquisa::placeholder {
+    color: rgba(0, 0, 0, 0.664);
+    font-size: 1.6rem;
+    text-indent: 1rem;
+}
+
+/* Pesquisa end -------------------------------------------------------------------- */
