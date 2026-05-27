@@ -252,6 +252,9 @@ span {
 /* Conteúdo -------------------------------------------------------------------- */
 
 .container-conteudo {
+    display: flex;
+    align-items: start;
+
     width: 100%;
     height: auto;
     background-color: rgb(43, 34, 34);
@@ -262,7 +265,7 @@ span {
 aside {
     background-color: #91352a;
     max-width: 30%;
-    height: auto;
+    height: 100%;
     padding: 1rem;
 }
 
@@ -279,4 +282,41 @@ aside ul li {
     color: aquamarine;
     font-size: 1.6rem;
     margin: 1rem;
+}
+
+/* Main -------------------------------------------------------------------- */
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    padding: 1.5rem;
+    width: 100%;
+    height: 40rem;
+}
+
+.img {
+    width: 10rem;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid black;
+}
+
+.img img {
+    border-radius: 8px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex: 0 0 20rem;
+
+    padding: 1rem;
+    background-color: white;
+    margin: 1rem;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 1rem;
 }
