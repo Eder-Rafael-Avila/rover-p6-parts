@@ -10,6 +10,10 @@ html {
     font-size: 10px;
 }
 
+body {
+    background-color: #fffae3;
+}
+
 body, html {
     width: 100%;
     height: 100%;
@@ -23,6 +27,97 @@ a {
     color: black;
     text-decoration: none;
 }
+
+/* Navegação -------------------------------------------------------------------- */
+
+.icon {
+    width:3rem;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 8rem;
+    padding: 0.5rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+
+    width: 8rem;
+    margin-left: 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+    width: 60%;
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    list-style: none;
+}
+
+nav ul > li {
+    font-size: 1.4rem;
+}
+
+nav ul > li > a {
+    padding: 1.5rem;
+}
+
+nav ul > li > a:hover {
+    color: #7f4a44;
+    text-decoration: underline;
+}
+
+.carrinho {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: end;
+
+    width: 11%;
+    margin-right: 2rem;
+    color: black;
+}
+
+.carrinho .icon {
+    margin-left: 2.5rem;
+}
+
+.carrinho button {
+    background-color: #bd6d64;
+    color: white;
+
+    font-size: 1.6rem;
+    height: 3.5rem;
+    width: 8rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.664);
+    transition-duration: 0.3s;
+}
+
+.carrinho button:hover {
+    background-color: #7f4a44;
+    color: rgb(255, 255, 255);
+    width: 9rem;
+}
+
+/* Navegação end -------------------------------------------------------------------- */
 
 /* Header -------------------------------------------------------------------- */
 
@@ -71,6 +166,7 @@ header {
     flex-direction: column;
     justify-content: start;
 
+    width: 45%;
     height: 30rem;
 }
 
@@ -85,6 +181,13 @@ header {
     color: rgba(255, 255, 255, 0.637);
 }
 
+#informacao {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.781);
+    width: 80%;
+    margin-top: 1rem;
+}
+
 /* Login */
 
 .header-container-login {
@@ -94,8 +197,8 @@ header {
     flex: 1;
 
     background-color: #301b19;
-    max-width: 60rem;
-    height: 28rem;
+    max-width: 56rem;
+    height: 24rem;
     box-shadow: 0px 0px 15px rgb(0, 0, 0);
     border-radius: 1.2rem;
     
@@ -162,69 +265,88 @@ span {
 
 /* Header end -------------------------------------------------------------------- */
 
-/* Pesquisa -------------------------------------------------------------------- */
+/* Conteúdo -------------------------------------------------------------------- */
 
-.icon {
-    width:3rem;
-}
-
-.pesquisa {
+.container-conteudo {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    align-items: start;
 
     width: 100%;
-    height: 7rem;
+    height: auto;
 }
 
-.logo {
-    width: 8%;
+/* Aside -------------------------------------------------------------------- */
+
+aside {
+    background-color: #301b19;
+    max-width: 30%;
+    height: 100%;
+    padding: 1rem;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
 }
 
-.carrinho {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: end;
-
-    width: 20%;
-    color: black;
-}
-
-.carrinho .icon {
-    margin-left: 2.5rem;
-}
-
-.carrinho button {
-    background-color: #bd6d64;
+aside h2 {
     color: white;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    margin-left: 1rem;
+}
 
-    font-size: 1.6rem;
-    height: 3.5rem;
-    width: 8rem;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.664);
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    color: white;
+    font-size: 1.7rem;
+    margin: 2rem 0rem 2rem 1rem;
+}
+
+aside ul li:hover {
+    color: #7f4a44;
+    text-decoration: underline;
     transition-duration: 0.3s;
 }
 
-.carrinho button:hover {
-    background-color: #7f4a44;
-    color: rgb(255, 255, 255);
-    width: 9rem;
+/* Main -------------------------------------------------------------------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1.5rem;
+    width: 100%;
+    height: 40rem;
 }
+
+.img {
+    width: 10rem;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid black;
+}
+
+.img img {
+    border-radius: 8px;
+}
+
+/* Barra de pesquisa -------------------------------------------------------------------- */
 
 .container-pesquisa {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    align-self: center;
 
-    width: 62%;
+    width: 80%;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .barra-pesquisa {
     width: 95%;
-    height: 3.5rem;
+    height: 4.2rem;
     text-indent: 0.5rem;
     font-size: 1.6rem;
     border: none;
@@ -247,76 +369,67 @@ span {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.664), 0px 0px 10px rgba(0, 0, 0, 0.664);
 }
 
-/* Pesquisa end -------------------------------------------------------------------- */
+/* Produtos -------------------------------------------------------------------- */
 
-/* Conteúdo -------------------------------------------------------------------- */
-
-.container-conteudo {
-    display: flex;
-    align-items: start;
-
-    width: 100%;
-    height: auto;
-    
-}
-
-/* Aside -------------------------------------------------------------------- */
-
-aside {
-    background-color: #91352a;
-    max-width: 30%;
-    height: 100%;
-    padding: 1rem;
-}
-
-aside h2 {
-    font-size: 2rem;
-    margin-left: 1rem;
-}
-
-aside ul {
-    list-style: none;
-}
-
-aside ul li {
-    color: aquamarine;
-    font-size: 1.6rem;
-    margin: 1rem;
-}
-
-/* Main -------------------------------------------------------------------- */
-
-main {
+.produtos {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
-    padding: 1.5rem;
-    width: 100%;
-    height: 40rem;
-}
-
-.img {
-    width: 10rem;
-    margin: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid black;
-}
-
-.img img {
-    border-radius: 8px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     gap: 1rem;
-    flex: 0 0 22rem;
+    flex: 0 0 30%;
 
     padding: 1rem;
     background-color: white;
     margin: 1rem;
     box-shadow: 0px 0px 10px black;
     border-radius: 1rem;
+    text-align: center;
+    
+}
+
+.preco h3 {
+    font-size: 1.5em;
+}
+
+.comprar {
+    width: 100%;
+}
+
+.botao-compra {
+    background-color: #cc8f60;
+    padding: 1.8rem;
+    border: none;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.356);
+}
+
+.botao-compra:hover {
+    background-color: #7f4a44;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+/* Conteúdo end -------------------------------------------------------------------- */
+
+/* Footer -------------------------------------------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #301b19;
+    width: 100%;
+    height: 6rem;
+    color: white;
+    font-size: 1.6rem;
+    margin-top: 2rem;
 }
